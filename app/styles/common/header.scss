@@ -1,0 +1,29 @@
+$navbar-brandcolor:#637fa7;
+.header .navbar-brand,
+.header .navbar-brand:hover,
+.header .navbar-brand:focus{
+	background-color: $navbar-brandcolor;
+	color:#fff;
+	text-align: center;
+	width:200px;
+	
+}
+.header .user{
+	padding:0;margin:0;
+	line-height:50px;
+	img{
+		width:32px;
+		height:32px;
+	}
+}
+.header .dropdown-menu{
+	margin-top:50px;
+}
+#siderbtn{
+	position:absolute;
+	font-size:25px;
+	line-height:55px;
+	top:0;
+	left:168px;
+	color:#fff;
+}

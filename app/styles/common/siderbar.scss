@@ -1,0 +1,45 @@
+
+ul{list-style:none;padding:0;margin:0;}
+.siderbar{
+	width:50px;
+	height:1000px;
+	border: 1px solid #090909;
+	position: fixed;
+	top:49px;
+	left: 0;
+	background-color: #222;
+	color:#fff;
+	box-shadow: 2px 0 1px 1px #ccc;
+	overflow:hidden;
+}
+.list{
+	height:1000px;
+}
+.lis{
+	width:198px;
+	margin-bottom:1px;
+}
+.link{
+	display:block;
+	height:50px;
+	line-height:50px;
+	color: #fff;
+	line-height:50px;
+	padding:0 10px;
+	.glyphicon{
+		font-size:22px;
+		line-height:50px;
+	}
+	.item-text{
+		font-size:18px;
+		float:right;
+	}
+	.glyphicon-menu-right{
+		font-size:15px;
+	}
+
+}
+.submenu{
+	padding-left:50px;
+	display:none;
+}
