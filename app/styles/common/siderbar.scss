@@ -1,7 +1,7 @@
 
 ul{list-style:none;padding:0;margin:0;}
 .siderbar{
-	width:50px;
+	width:200px;
 	height:1000px;
 	border: 1px solid #090909;
 	position: fixed;
@@ -15,31 +15,45 @@ ul{list-style:none;padding:0;margin:0;}
 .list{
 	height:1000px;
 }
-.lis{
+.alis,.lis{
 	width:198px;
-	margin-bottom:1px;
+	margin-bottom:5px;
+}
+.alis:hover,.alisActive{
+	border-left:4px solid #19aa8d;
+	background:#090900;
 }
 .link{
 	display:block;
 	height:50px;
 	line-height:50px;
 	color: #fff;
-	line-height:50px;
-	padding:0 10px;
+	padding:0 15px;
 	.glyphicon{
-		font-size:22px;
+		font-size:16px;
 		line-height:50px;
 	}
 	.item-text{
-		font-size:18px;
-		float:right;
+		font-size:14px;
+		padding-left:30px;
 	}
 	.glyphicon-menu-right{
-		font-size:15px;
+		font-size:14px;
+		padding-left:40px;
+		display:inline-box;
 	}
 
 }
+#siderbtn{
+	margin-bottom:30px;
+	.glyphicon{
+		font-size:20px;
+	}
+}
 .submenu{
 	padding-left:50px;
-	display:none;
+	li{
+		height:30px;
+		font-size:14px;
+	}
 }

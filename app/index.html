@@ -5,6 +5,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatiable" content="IE=EmulateIE7">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -12,8 +13,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/common/commom_o2o.css
-">    
+    <link rel="stylesheet" href="styles/common/commom_o2o.css">
     <!-- endbuild -->
   </head>
   <body ng-app="adminWebFrontApp">
@@ -59,8 +59,108 @@
       </div>
     </div> -->
     <div ng-include="'./views/block/header.html'" scope="" onload=""></div>
-    <div ng-include="'./views/block/sidebar.html'" scope="" onload=""></div>
-    <div class="content" style="border: 1px solid red;"><p>1</p><p>2</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p></div>
+    <!-- <div ng-include="'./views/block/sidebar.html'" scope="" onload=""></div> -->
+    <div class="siderbar" id="siderbar">
+      <ul class="list">
+        <li class="alis">
+          <a href="javascript:void(0);" id="siderbtn" class="link">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+            <span class="item-text"></span>显示/隐藏
+          </a>
+        </li>
+        <li class="alis alisActive">
+          <a class="link" onselectstart="return false;">
+            <span class="glyphicon glyphicon-home"></span>
+            <span class="item-text">
+              首页
+            </span>
+          </a>
+        </li> 
+        <li class="alis">
+          <a class="link" onselectstart="return false;">
+            <span class="glyphicon glyphicon-tasks"></span>
+            <span class="item-text">
+            订单处理
+            </span>
+          </a>  
+        </li>
+        <li class="alis">
+          <a class="link" onselectstart="return false;">
+            <span class="glyphicon glyphicon-yen"></span>
+            <span class="item-text">
+            账户余额
+            </span>
+          </a>  
+        </li>
+        <li class="alis lis">
+          <a class="link" onselectstart="return false;">
+            <span class="glyphicon glyphicon-edit"></span>
+            <span class="item-text">
+            商品管理
+            </span>
+            <span class="glyphicon glyphicon-menu-right"></span>
+          </a>  
+          <ul class="submenu" style="display: none;">
+            <li><a href="#">Photoshop</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Maquetacion web</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content" ng-include="'./views/ordersHandle.html'" scope="" onload="">
+      
+    </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -71,7 +171,15 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
-
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?14a454b8fa5609e579b15aa34070ec4d";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -91,12 +199,24 @@
     <script src="bower_components/angular-oauth2/dist/angular-oauth2.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/siderbar.js"></script>
         <!-- endbuild -->
+
 </body>
 </html>
+        <script>
+          $(function(){
+            var script=document.createElement("script");
+            script.type="text/javascript";
+            script.src="scripts/siderbar.js";
+             script.async="async";
+            document.getElementsByTagName('html')[0].appendChild(script);
+               // var head = $('html');
+               //  head.append($("<scri"+"pt>"+"</scr"+"ipt>").attr({ src:'scripts/test.js', type: 'text/javascript', id: 'loadscript' }))
+          })
+        </script>
+
+
