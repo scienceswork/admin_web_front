@@ -7,20 +7,20 @@
 					<form class="form-inline col-md-12">
 						<span>开始日期:</span>
 						<div class="input-group col-md-2">
-							<label class="sr-only" for="startdate">开始日期</label>
-				    		<input type="date" class="form-control" id="startdate" placeholder="开始日期">
+							<label class="sr-only" for="startdate2">开始日期</label>
+				    		<input type="date" class="form-control" id="startdate2" placeholder="开始日期">
 						</div>
 						<span>结束日期</span>
 						<div class="input-group col-md-2">
-							<label class="sr-only" for="enddate">开始日期</label>
-				    		<input type="date" class="form-control" id="enddate" placeholder="结束日期">
+							<label class="sr-only" for="enddate2">开始日期</label>
+				    		<input type="date" class="form-control" id="enddate2" placeholder="结束日期">
 						</div>
 						<button type="button" class="btn btn-primary btn-sm">
 							<span class="glyphicon glyphicon-search"></span>
 						</button>
 						<div class="input-group col-md-3 col-md-offset-1">
-							<label class="sr-only" for="searchOrder">搜索订单</label>
-				    		<input type="search" class="form-control" id="searchOrder" placeholder="输入手机号或订单号查询...">
+							<label class="sr-only" for="searchOrder2">搜索订单</label>
+				    		<input type="search" class="form-control" id="searchOrder2" placeholder="输入手机号或订单号查询...">
 						</div>
 						<button type="button" class="btn btn-primary btn-sm">
 							<span class="glyphicon glyphicon-search"></span>
@@ -40,7 +40,105 @@
 					  <!-- Tab panes -->
 					  <div class="tab-content">
 					    <div role="tabpanel" class="tab-pane active" id="comfirm">
-							<table class="table table-bordered table-striped textCenter">
+							<table class="table table-bordered table-striped textCenter comfirm-block">
+							  <thead>
+							  	<tr>
+							  		<th>订单号</th>
+							  		<th>商品</th>
+							  		<th>下单时间</th>
+							  		<th>买家名称</th>
+							  		<th>金额</th>
+							  		<th>送货时间</th>
+							  		<th>买家备注</th>
+							  		<th>状态</th>
+							  	</tr>
+							  	<tr>
+							  		<td>01319</td>
+							  		<td>
+								  		<ul>
+								  			<li>老坛酸菜*1</li>
+								  			<li>冰红茶*3</li>
+								  			<li>冰绿茶*1</li>
+								  		</ul>
+							  		</td>
+							  		<td>
+							  			2016-08-06 12:00:00
+							  		</td>
+							  		<td>
+							  			用户1
+							  		</td>
+							  		<td>
+							  			<div class="price">15.00元</div>	
+							  		</td>
+							  		<td>
+							  			2016-08-06 12:30:00
+							  		</td>
+							  		<td>
+							  			送货上门
+							  		</td>
+							  		<td>
+							  			<button class="btn btn-danger">待确认</button>
+							  		</td>
+							  	</tr>
+							  </thead>
+							</table>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="comfirmed">
+
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="paid">
+
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">订单查询</div>
+			<div class="panel-body">
+				<div class="row date">
+					<form class="form-inline col-md-12">
+						<span>开始日期:</span>
+						<div class="input-group col-md-2">
+							<label class="sr-only" for="startdate1">开始日期</label>
+				    		<input type="date" class="form-control" id="startdate1" placeholder="开始日期">
+						</div>
+						<span>结束日期</span>
+						<div class="input-group col-md-2">
+							<label class="sr-only" for="enddate1">开始日期</label>
+				    		<input type="date" class="form-control" id="enddate1" placeholder="结束日期">
+						</div>
+						<button type="button" class="btn btn-primary btn-sm">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+						<div class="input-group col-md-3 col-md-offset-1">
+							<label class="sr-only" for="searchOrder1">搜索订单</label>
+				    		<input type="search" class="form-control" id="searchOrder1" placeholder="输入手机号或订单号查询...">
+						</div>
+						<button type="button" class="btn btn-primary btn-sm">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+				<div class="partition-line"></div>
+				<div class="row">
+					<div class="col-md-12">
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#comfirm" aria-controls="confirm" role="tab" data-toggle="tab">待确认</a></li>
+					    <li role="presentation"><a href="#comfirmed" aria-controls="comfirmed" role="tab" data-toggle="tab">已确认</a></li>
+					    <li role="presentation"><a href="#paid" aria-controls="paid" role="tab" data-toggle="tab">待支付</a></li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="comfirm">
+							<table class="table table-bordered table-striped textCenter comfirm-block">
 							  <thead>
 							  	<tr>
 							  		<th>订单号</th>

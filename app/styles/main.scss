@@ -127,6 +127,10 @@ a,a:hover,a:focus{text-decoration: none;cursor:pointer;}
 .content-block{width:100%;height:10.5rem;overflow:auto;padding:8px;}
 .left{float:left;}
 .right{float:right;}
+.clear{clear:both;}
 .price{color:#fa6347;font-size:18px;font-weight: 700;}
 .small-px{font-size:14px;}
 .textCenter{text-align:center;}
+.dashed-line{height:1px;line-height:1px;font-size:0px;overflow:hidden;overflow:hidden;border:1px dashed #777;}
+.padding-top-s{padding-top:5px;}
+.padding-top-m{padding-top:10px;}
