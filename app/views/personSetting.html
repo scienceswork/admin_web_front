@@ -1,13 +1,12 @@
 <div class="row personSetting">
-	<div class="col-md-12">
+	<div class="col-sm-11">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-			
-				<span>个人设置</span>
+				<span>个人信息及设置</span>
 				<a class="glyphicon glyphicon-edit pull-right"></a>
-
 			</div>
 			<div class="panel-body">
+			<!-- 头像 -->
 				<h5>头像修改</h5>
 				<div class="row changeHead">
 					<div>
@@ -15,47 +14,78 @@
 					</div>
 					<button class="btn btn-info">修改头像</button>
 				</div>
+				<!-- 头像-结束 -->
+				<!-- 基本信息 -->
 				<h5>用户基本信息</h5>
 				<div class="row">
 					<form class="form-horizontal">
-					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
-					    <div class="col-sm-6">
-					      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">真实姓名</label>
-					    <div class="col-sm-6">
-					      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">手机号码*</label>
-					    <div class="col-sm-6">
-					      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
-					    <div class="col-sm-6">
-					      <input type="email" class="form-control" id="inputEmail3" value="2313" disabled>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">支付宝*</label>
-					    <div class="col-sm-6">
-					      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-2 control-label">收货地址*</label>
-					    <div class="col-sm-6">
-					      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
-					    </div>
-					  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+						    <div class="col-sm-6">
+						      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">真实姓名</label>
+						    <div class="col-sm-6">
+						      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">手机号码*</label>
+						    <div class="col-sm-6">
+						      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
+						    </div>
+						  </div>
+
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">微信*</label>
+						    <div class="col-sm-6">
+						      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
+						    </div>
+						  </div>
+
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+						    <div class="col-sm-6">
+						      <input type="email" class="form-control" id="inputEmail3" value="2313" disabled>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">支付宝*</label>
+						    <div class="col-sm-6">
+						      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">收货地址*</label>
+						    <div class="col-sm-6">
+						      <input type="text" class="form-control" id="inputEmail3" value="2313" disabled>
+						    </div>
+						  </div>
+						  <div class="form-group  row">
+						    <label for="inputEmail3" class="col-sm-2 control-label">负责学校</label>
+						    <div class="col-sm-2">
+						      <select name="" id="" class="form-control">
+								<option value="" selected>省</option>
+						      </select>
+						    </div>
+						     <div class="col-sm-2">
+						      <select name="" id="" class="form-control">
+								<option value="" selected>市</option>
+						      </select>
+						    </div>
+						     <div class="col-sm-2">
+						      <select name="" id="" class="form-control">
+								<option value="" selected>学校</option>
+						      </select>
+						    </div>
+						  </div>
+						  
+
 					 </form>
 				</div>
+				<!-- 基本信息-结束 -->
 				<h5>修改密码</h5>
 				<div class="row">
 					<form action="" class="form-horizontal">
@@ -78,11 +108,11 @@
 								<input type="password" class="form-control">
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="col-md-offset-3">
+						<div class="form-group personSetting-sumbit">
+							<div class="col-md-offset-4">
 								<button class="btn col-md-1 btn-success">提交</button>
 							</div>
-							<div class="col-md-offset-4">
+							<div class="col-md-offset-5">
 								<button class="btn btn-warning col-md-1">重置</button>
 							</div>
 						</div>

@@ -1,10 +1,10 @@
 .changeHead{
-	margin-left:300px;
+	margin-left:350px;
 	.btn{
 		margin-left:10px;
 	}
 }
-.personSetting h5{
+.personSetting h5,.storeSetting h5{
 	width:100%;
 	height:25px;
 	line-height:25px;
@@ -12,4 +12,7 @@
 	border-left:3px solid #19aa8d; 
 	background:#f4f4f4;
 	font-weight:600;
+}
+.personSetting-sumbit{
+	margin-top:50px;
 }
