@@ -1,0 +1,10 @@
+// product-item
+.product-item-sale>span:before{
+	content:'';
+	margin-left:10px;
+	padding-right:10px;
+	border-left:3px solid #66CCCC;
+}
+.product-item-search select{
+	float:none;
+}
