@@ -18,8 +18,18 @@
 }
 .changePrice-input{
 	margin:0 20px; 
-	border-radius:5px;
+	border-radius:4px;
+	border:1px #ccc solid;
 }
 .changePrice-Modal{
 	width:300px;
+}
+//catalogs
+.addCatalogs-Modal{
+	width:300px;
+}
+.addCatalogs-input{
+	width:230px;
+	border-radius:4px;
+	border:1px #ccc solid;
 }

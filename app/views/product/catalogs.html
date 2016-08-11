@@ -1,0 +1,81 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		编辑分类
+	</div>
+	<div class="panel-body">
+		<!-- 商品分类管理 -->
+		<div class="row">
+			<div class="col-sm-1">
+				<button class="btn btn-info" data-toggle="modal" data-target="#addCatalogs">+新增分类</button>
+			</div>
+		</div>
+		<div class="row margin-top-m">
+			<ul class="list-group">
+				<!-- 一个分类 -->
+				<li class="list-group-item">
+					<span>饮料</span>
+					<button class="btn btn-xs btn-default pull-right">删除</button>
+					<button class="btn btn-xs btn-default pull-right">上移</button>
+					<button class="btn btn-xs btn-default pull-right">下移</button>
+					<button class="btn btn-xs btn-default pull-right">修改</button>
+				</li>
+				<!-- 一个分类-结束 -->
+			</ul>
+		</div>
+		<!-- 商品分类管理-结束 -->
+<!-- 分页 -->
+		<div class="row">
+			<div class="col-sm-12">
+				<nav>
+					<ul class="pagination pagination-sm">
+						<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    					<li><a href="#">2</a></li>
+    					<li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	<!-- 分页-结束 -->
+	</div>
+</div>
+<!-- Addcatalogs-modal -->
+<div class="modal fade" id="addCatalogs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog addCatalogs-Modal" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+			<span class="glyphicon glyphicon-edit"></span>
+			<span>添加分类</span>
+        </h4>
+      </div>
+      <div class="modal-body">
+      	<span>名称:</span>
+        <input type="text" class="addCatalogs-input">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
